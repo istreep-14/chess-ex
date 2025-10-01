@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    .setting {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    label {
+      cursor: pointer;
+    }
+    .status {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      background: #f0f0f0;
+      font-size: 12px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #759900;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #617a00;
+    }
+  </style>
+</head>
+<body>
+  <h3>♟️ Lichess Auto-Analysis</h3>
+  
+  <div class="setting">
+    <input type="checkbox" id="autoAnalyze" checked>
+    <label for="autoAnalyze">Auto-request analysis</label>
+  </div>
+  
+  <div class="status" id="status">
+    Extension active ✓
+  </div>
+  
+  <button id="analyzeNow">Analyze Current Tab</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
